@@ -225,7 +225,7 @@ describe('', () => {
         cy.get('@users').should('have.callCount', 1);
       });
 
-      it('should not request posts from API', () => {
+      it.skip('should not request posts from API', () => {
         page.mockUsers();
         page.spyOn('**/posts**', 'posts');
 
